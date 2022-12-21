@@ -43,6 +43,23 @@ public class C02_ByClassName {
         // 2- string fiyati kiyaslama yapabilmek icin Integer'a cevirin
         // 3- en yuksek fiyati bulup yazdirin
 
+        String fiyatStr;
+        Integer fiyatInt;
+        Integer enYuksekFiyat=0;
+        for (WebElement each: fiyatlarListesi
+        ) {
+
+            fiyatStr= each.getText();
+            fiyatInt=Integer.parseInt(fiyatStr);
+
+            if (fiyatInt>enYuksekFiyat){
+                enYuksekFiyat=fiyatInt;
+            }
+
+        }
+        System.out.println("");
+        System.out.println("En yuksek urun fiyati : " + enYuksekFiyat);
+
         Thread.sleep(3000);
         driver.close();
     }
