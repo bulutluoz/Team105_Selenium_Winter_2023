@@ -34,7 +34,7 @@ public class C02_CssSelector {
         driver.findElement(By.linkText("Gift Cards")).click();
         Thread.sleep(2000);
         //7-  Birthday butonuna basin
-        driver.findElement(By.xpath("//a[@aria-label='Birthday']")).click();
+        driver.findElement(By.cssSelector("a[aria-label='Birthday']")).click();
         //8-  Best Seller bolumunden ilk urunu tiklayin
         driver.findElement(By.xpath("(//li[@class='a-carousel-card acswidget-carousel__card'])[1]")).click();
         //9-  Gift card details’den 25 $’i  secin

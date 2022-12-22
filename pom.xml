@@ -13,4 +13,14 @@
         <maven.compiler.target>11</maven.compiler.target>
     </properties>
 
+    <dependencies>
+        <!--Maven sayesinde projemiz icin gerekli olan tum kutuphanelerin
+            github adreslerini buraya yazmamiz yeterli olacak
+            github adreslerini bulma ve bu projenin anlayacagi halde buraya ekleme
+            isini mvnrepository.com'dan yapacagiz-->
+        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+
+
+    </dependencies>
+
 </project>
